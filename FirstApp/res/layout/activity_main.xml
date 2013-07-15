@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/ImageButton22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/tictac_description"
+        android:onClick="board_click"
+        android:src="@drawable/tictac_blank" />
+
+    <ImageButton
+        android:id="@+id/ImageButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButton11"
+        android:layout_toLeftOf="@+id/ImageButton23"
+        android:contentDescription="@string/tictac_description"
+        android:onClick="board_click"
+        android:src="@drawable/tictac_blank" />
+
+    <ImageButton
+        android:id="@+id/ImageButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageButton22"
+        android:layout_toLeftOf="@+id/ImageButton22"
+        android:contentDescription="@string/tictac_description"
+        android:onClick="board_click"
+        android:src="@drawable/tictac_blank" />
+
+    <ImageButton
+        android:id="@+id/ImageButton21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ImageButton22"
+        android:contentDescription="@string/tictac_description"
+        android:onClick="board_click"
+        android:src="@drawable/tictac_blank" />
+
+    <ImageButton
+        android:id="@+id/ImageButton13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageButton23"
+        android:layout_toRightOf="@+id/ImageButton22"
+        android:contentDescription="@string/tictac_description"
+        android:onClick="board_click"
+        android:src="@drawable/tictac_blank" />
+
+    <ImageButton
+        android:id="@+id/ImageButton23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageButton13"
+        android:layout_below="@+id/ImageButton12"
+        android:contentDescription="@string/tictac_description"
+        android:onClick="board_click"
+        android:src="@drawable/tictac_blank" />
+
+    <ImageButton
+        android:id="@+id/ImageButton31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageButton22"
+        android:layout_toLeftOf="@+id/ImageButton22"
+        android:contentDescription="@string/tictac_description"
+        android:onClick="board_click"
+        android:src="@drawable/tictac_blank" />
+
+    <ImageButton
+        android:id="@+id/ImageButton32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageButton22"
+        android:layout_toLeftOf="@+id/ImageButton23"
+        android:contentDescription="@string/tictac_description"
+        android:onClick="board_click"
+        android:src="@drawable/tictac_blank" />
+
+    <ImageButton
+        android:id="@+id/ImageButton33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageButton23"
+        android:layout_alignTop="@+id/ImageButton32"
+        android:contentDescription="@string/tictac_description"
+        android:onClick="board_click"
+        android:src="@drawable/tictac_blank" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="new_game"
+        android:text="@string/button_new" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageButton12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:contentDescription="@string/tictac_difficulty"
+        android:max="3"
+        android:progress="0" />
+
+    <TextView
+    	android:textIsSelectable="false"
+        android:id="@+id/winText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageButton31"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
